@@ -1,0 +1,6 @@
+logging:
+  type: "kaching"
+  app-name: "kaching"
+  app-code: "kaching"
+timestamp:
+  pattern: "yyyy-MM-dd HH:mm:ss.SSS"
