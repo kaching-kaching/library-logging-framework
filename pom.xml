@@ -66,10 +66,6 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
 				<groupId>com.cosium.code</groupId>
 				<artifactId>git-code-format-maven-plugin</artifactId>
 				<version>2.1</version>
@@ -95,32 +91,32 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>org.sonatype.plugins</groupId>
-				<artifactId>nexus-staging-maven-plugin</artifactId>
-				<version>1.5.1</version>
-				<executions>
-					<execution>
-						<id>default-deploy</id>
-						<phase>deploy</phase>
-						<goals>
-							<goal>deploy</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<serverId>nexus</serverId>
-					<nexusUrl>http://46.101.118.26:8081/nexus/</nexusUrl>
-					<skipStaging>true</skipStaging>
-				</configuration>
-			</plugin>
+<!--			<plugin>-->
+<!--				<groupId>org.sonatype.plugins</groupId>-->
+<!--				<artifactId>nexus-staging-maven-plugin</artifactId>-->
+<!--				<version>1.5.1</version>-->
+<!--				<executions>-->
+<!--					<execution>-->
+<!--						<id>default-deploy</id>-->
+<!--						<phase>deploy</phase>-->
+<!--						<goals>-->
+<!--							<goal>deploy</goal>-->
+<!--						</goals>-->
+<!--					</execution>-->
+<!--				</executions>-->
+<!--				<configuration>-->
+<!--					<serverId>nexus</serverId>-->
+<!--					<nexusUrl>http://46.101.118.26:8081/nexus/</nexusUrl>-->
+<!--					<skipStaging>true</skipStaging>-->
+<!--				</configuration>-->
+<!--			</plugin>-->
 		</plugins>
 	</build>
 
-	<distributionManagement>
-		<snapshotRepository>
-			<id>nexus-snapshots</id>
-			<url>http://46.101.118.26:8081/repository/kaching/</url>
-		</snapshotRepository>
-	</distributionManagement>
+<!--	<distributionManagement>-->
+<!--		<snapshotRepository>-->
+<!--			<id>nexus-snapshots</id>-->
+<!--			<url>http://46.101.118.26:8081/repository/kaching/</url>-->
+<!--		</snapshotRepository>-->
+<!--	</distributionManagement>-->
 </project>
